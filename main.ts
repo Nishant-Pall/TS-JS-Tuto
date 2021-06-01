@@ -117,6 +117,12 @@ add(9, 9)
 add(5) //works
 add() // works
 
+// user defined type
+type AddFunc = (x: number, y: number) => number
+
+const addNum: AddFunc = (x: number, y: number) => x + y
+
+const add2 = (nums: { a: number, b: number }) => nums.a + nums.b
 
 // Interfaces
 

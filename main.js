@@ -106,6 +106,8 @@ function add(num1, num2) {
 add(9, 9);
 add(5); //works
 add(); // works
+var addNum = function (x, y) { return x + y; };
+var add2 = function (nums) { return nums.a + nums.b; };
 var obj = {
     x: 5.32,
     y: 7
