@@ -106,6 +106,10 @@ function add(num1, num2) {
 add(9, 9);
 add(5); //works
 add(); // works
+var obj = {
+    x: 5.32,
+    y: 7
+};
 function fullName(person) {
     console.log(person.firstName + " " + person.lastName);
 }

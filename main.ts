@@ -120,6 +120,16 @@ add() // works
 
 // Interfaces
 
+// interfaces for objects
+interface myObj {
+    x: number,
+    y: number
+}
+
+const obj: myObj = {
+    x: 5.32,
+    y: 7
+}
 
 interface Person {
     firstName: string,
