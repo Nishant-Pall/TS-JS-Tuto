@@ -159,7 +159,20 @@ let p = {
 
 fullName(p)
 
+interface Dog {
+    bark: string
+}
 
+interface Cat {
+    purr: string
+}
+
+type DogCat = Dog & Cat
+
+const dogCat: DogCat = {
+    bark: "bark!!",
+    purr: "purr!!"
+}
 
 // OOPS
 

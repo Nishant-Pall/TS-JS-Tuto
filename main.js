@@ -123,6 +123,10 @@ var p = {
     lastName: 'Wayne'
 };
 fullName(p);
+var dogCat = {
+    bark: "bark!!",
+    purr: "purr!!"
+};
 // OOPS
 var Employee = /** @class */ (function () {
     function Employee(name) {
