@@ -143,3 +143,38 @@ let p = {
 
 fullName(p)
 
+
+
+// OOPS
+
+class Employee {
+    employeeName: string
+    constructor(name: string) {
+        this.employeeName = name
+    }
+
+    greet() {
+        console.log(`Good Morning ${this.employeeName}`);
+    }
+}
+
+let emp1 = new Employee('Nishant')
+console.log(emp1.employeeName);
+emp1.greet()
+
+class Manager extends Employee {
+    constructor(managerName: string) {
+        super(managerName) // calling baseclass constructor
+    }
+
+    delegateWork() {
+        console.log(`Manager delegating Tasks`);
+    }
+}
+
+let m1 = new Manager('Bruce')
+m1.delegateWork()
+m1.greet()
+
+// Access Modifiers
+// These are same like C++
